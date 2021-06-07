@@ -4,11 +4,62 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <!--<h1 class="title" id="inicio">Love Loversllllllllllllll</h1>-->
+        <!--<img src="" class="jpgprincipal">-->
+        <nav class="menuNavegacion">
+          <a href="#teranAnimals">TERAN ANIMALS</a>
+        </nav>
+  
+        <div class=" contenedor head">
+          <h1 class="title2">Un espacio para encontrar al paseador ideal</h1>
+          <p class="pSign"> Sign up to start</p>
+          <p>Nombre :</p>
+          <input type="text" placeholder="name">
+          <p>Apellidos:</p>
+          <input type="text" placeholder="adress">
+          <p>introducca su direccion:</p>
+          <input type="text" placeholder="adress">
+          <input type="button" class="botonPaseador" onclick="location.href='../src/paseadores.html'" value="ENCONTRAR PASEADOR" />
+        </div>
+    </header> 
+
+    <main>
+
+      <section class="gallery" id="teranAnimals">
+        <div class="contenedor">
+          <h2 class="subtitulo">Galeria</h2>
+           <div class="contGallery">    
+             <img src="../imagenes/imagen4.jpg" alt="imagGaleria"class="imagGaleria">
+             <img src="../imagenes/imagen5.jpg" alt="imagGaleria"class="imagGaleria">
+             <img src="../imagenes/imagen6.jpg" alt="imagGaleria"class="imagGaleria">
+           </div>
+
+        </div>
+      </section>
+
+      <div class="header header-light">
+        <a href="index.html" class="header-logo"> <span class="color-red-dark">S.A</span></a>
+        <a href="#" class="header-icon header-icon-1 close-sidebar-mask"></a>
+        <a href="#" class="header-icon header-icon-1 open-sidebar">
+            <em class="line-1"></em>
+            <em class="line-2"></em>
+            <em class="line-3"></em>    
+        </a>
+       </div>   
+    </main>
+
+    <footer>
+      <div class="contactUs">
+        <h2>TERAN ANIMALS</h2>
+        <P>Expertos en cuidar perros<br>Telefono: 999999999</P>
+      </div>
+
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
