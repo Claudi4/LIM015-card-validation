@@ -15,12 +15,13 @@
         <h1>Bienvenido</h1>
         <p>Para continuar con la compra necesitamos validad tu tarjeta</p>
         <p>Ingresa aqui tu tarjeta</p>
-        <input type="text" placeholder="number of credit card" id="cardText" step="0" pattern="^[0-9]+" required>
-        <P>¿Cuando quieres recibir tu pedido?</P>
+        <input type="text" class="inputText" placeholder="number of credit card" id="inputCardNumber" >
+        <p>¿Cuando quieres recibir tu pedido?</p>
         <p>Selecciona fecha horario de despacho</p>
-        <input type="date" name="fecha">
-        <button class="botton" onclick="isCardValid">VALIDAR</button>
+        <input type="date" class="inputText" name="fecha">
+        <button class="bottons" id="buttonVali">VALIDAR CARD</button>
       </div>
-    </header>
+      
+      <script src="index.js" type="module"></script>
 </body>
 </html>

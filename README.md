@@ -410,3 +410,9 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 
 * [ ] Implementa `validator.getIssuer`.
 * [ ] Interfaz muestra la franquicia de la tarjeta
+
+
+--------
+Card Validation
+Este proyecto aloja el código de validacion de un tarjeta de credito programada en Html,Css y JavaScript.
+imagen final

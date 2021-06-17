@@ -25,7 +25,7 @@ body {
 
 header{
     height:100vh ;
-    background-image: linear-gradient(120deg, rgba(166, 192, 254, 0.404) 0%, rgba(246, 128, 132, 0.404) 100%),url(../imagenes/imagen\ principal.jpg);
+    background-image: linear-gradient(120deg, rgba(166, 192, 254, 0.397) 0%, rgba(246, 128, 132, 0.39) 100%),url(../imagenes/imagen\ principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -98,7 +98,7 @@ header{
 
 .page3{
     height:100vh ;
-    background-image: linear-gradient(120deg, rgba(166, 192, 254, 0.404) 0%, rgba(246, 128, 132, 0.404) 100%),url(../imagenes/page3.jpg);
+    background-image: linear-gradient(120deg, rgba(166, 192, 254, 0.315) 0%, rgba(246, 128, 132, 0.315) 100%),url(../imagenes/page3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -109,21 +109,43 @@ header{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    color: blanchedalmond;   
+    color:black; 
+    font-size:18px;  
 }
+
 .footer{
     background: #9f8ad9;
     padding-bottom: 0.1px;
 }
+
 .contactUs{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 40px;
+    padding: 30px;
     background: #9f8ad9;
-    padding-bottom: 0.1px;
     flex-wrap: wrap;
 }
- .botonPaseador{
-    margin-top: 10px;
- }
+
+ .bottons{
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 20px;
+    color:#ffff;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:40px;
+    padding-right:40px;
+    background-color:#cb9b8c;
+    border-color: #d8d8d8;
+    border-width: 3px;
+    border-style: solid;
+    border-radius:35px;
+    margin: 30px; 
+  }
+  
+  .inputText{
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+  }
