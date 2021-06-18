@@ -1,5 +1,6 @@
 const validator = {
   isValid: function (numberTotal) {
+    console.log('2');
     let arrayDeNumerosDeTarjeta = Array.from(numberTotal);
     let arrayDeNumerosPares = [];
     let sumaTotal = 0; 
@@ -35,12 +36,12 @@ const validator = {
       } else {
           return vl;
       }
-  }
-  
-
-    
+    } 
   },
-
+  maskify: function (numberTotal) {
+    console.log('1 - EN MASKIFY: ', numberTotal);
+    return numberTotal.slice(0,-4).replace(/./g, "#") + numberTotal.slice(-4);
+  }
 };
 
 export default validator;

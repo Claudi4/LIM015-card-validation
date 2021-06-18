@@ -12,6 +12,7 @@ document
 
 function validarCardIngreso() {
   numberTotal = inputCardNumber.value;
+  inputCardNumber.value = validator.maskify(inputCardNumber.value);
   const valid = validator.isValid(numberTotal);
   console.log(valid);
   if (valid == true) {
@@ -20,5 +21,19 @@ function validarCardIngreso() {
     alert("tarjeta invalida");
   }
   
+}
+
+let miFormulario = document.querySelector('#miFormulario');
+miFormulario.codigo.addEventListener('keypress', function (e){
+	if (!soloNumeros(event)){
+  	e.preventDefault();
+  }
+})
+
+//Solo permite introducir numeros.
+function soloNumeros(e){
+    var key = e.charCode;
+    console.log(key);
+    return key >= 48 && key <= 57;
 }
 
