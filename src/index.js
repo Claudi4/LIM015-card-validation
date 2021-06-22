@@ -33,17 +33,17 @@ function validarCardIngreso() {
   
 }
 
-let miFormulario = document.querySelector('#miFormulario');
+/*let miFormulario = document.querySelector('#miFormulario');
 miFormulario.codigo.addEventListener('keypress', function (e){
 	if (!soloNumeros(event)){
   	e.preventDefault();
   }
-})
+})*/
 
 //Solo permite introducir numeros.
-function soloNumeros(e){
+/*function soloNumeros(e){
     var key = e.charCode;
     console.log(key);
     return key >= 48 && key <= 57;
-}
+}*/
 
