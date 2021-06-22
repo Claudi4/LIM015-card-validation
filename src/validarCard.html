@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
+    <div class="mainContent">
+        <div class="page3" id="validacionOcultar">
+            <h1>Bienvenido</h1>
+            <p>Para continuar con la compra necesitamos validar tu tarjeta</p>
+            <p>Ingresa aqui tu tarjeta</p>
+            <form name='miFormulario' id='miFormulario'>
+                <input type="text" name="codigo" class="inputText" placeholder="number of credit card" id="inputCardNumber"
+                    minlength="16" maxlength="16">
+            </form>
+            <p>¿Cuando quieres recibir tu pedido?</p>
+            <p>Selecciona fecha del despacho</p>
+            <input type="date" class="inputText" name="fecha">
+            <button class="bottons" id="buttonVali">VALIDAR CARD</button>
+        </div>
     
-    <div class="page3">
-        <h1>Bienvenido</h1>
-        <p>Para continuar con la compra necesitamos validad tu tarjeta</p>
-        <p>Ingresa aqui tu tarjeta</p>
-        <form name='miFormulario' id='miFormulario'>
-            <input type="text" name="codigo" class="inputText" placeholder="number of credit card" id="inputCardNumber" minlength="16" maxlength="16">
-        </form>
-        <p>¿Cuando quieres recibir tu pedido?</p>
-        <p>Selecciona fecha horario de despacho</p>
-        <input type="date" class="inputText" name="fecha">
-        <button class="bottons" id="buttonVali">VALIDAR CARD</button>
-      </div>
-      
-      <script src="index.js" type="module"></script>
+        <div class="pageBox" id="pageBox">
+            <div class="containerShow" id="containerShowTrue">
+                <img src="./imagenes/check.svg" alt="check de tarjeta valida" width="80px" />
+                <p class="box" id="showTrue">TARJETA VALIDA</p>
+            </div>
+    
+            <div class="containerShow" id="containerShowFalse">
+                <img src="./imagenes/close.svg" alt="check de tarjeta invalida" width="80px"/>
+                <p class="box" id="showfalse">TARJETA INVALIDA</p>
+            </div>
+            <button class="bottons" id="backToMenu" onclick="location.href='./index.html'" >MENU PRINCIPAL</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="index.js" type="module"></script>
 </body>
+
 </html>

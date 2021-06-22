@@ -413,6 +413,12 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 
 
 --------
-Card Validation
-Este proyecto aloja el código de validacion de un tarjeta de credito programada en Html,Css y JavaScript.
-imagen final
+Card Validation -Javacript
+
+Este proyecto aloja el código de validacion de una tarjeta de credito programada en Html,Css y JavaScript.
+Esta pagina wed ha sido desarrollada como parte del proceso de bootcamp de Laboratoria.
+Aqui lo usuarios podran validar una tarjeta para,se le pedira al usuario ingresar un número de tarjeta de crédito y se verificara a través del algoritmo de Luhn si el número ingresado pertenece a un número válido, en el caso de que así sea se desplegará un mensaje, "Tarjeta Válida", en caso contrario se le pedirá al usuario volver a ingresar un número de tarjeta con el siguiente mensaje, "Tarjeta inválida".
+Nuestro mockup fue hecho a base de lápiz y papel para la parte del diseño.  
+
+Creemos que cualquier mejora que se pueda añadir al código siempre será bienvenido.
+

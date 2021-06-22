@@ -4,6 +4,12 @@ console.log(validator);
 
 let inputCardNumber = document.getElementById("inputCardNumber");
 let numberTotal = "";
+const containerShowTrue= document.getElementById("containerShowTrue");
+containerShowTrue.style.display = "none";
+const containerShowFalse= document.getElementById("containerShowFalse");
+containerShowFalse.style.display = "none";
+const pageBox = document.getElementById("pageBox");
+pageBox.style.display ="none";
 
 
 document
@@ -11,14 +17,18 @@ document
   .addEventListener("click", validarCardIngreso);
 
 function validarCardIngreso() {
+  containerShowTrue.style.display = "none";
+  containerShowFalse.style.display = "none";
   numberTotal = inputCardNumber.value;
   inputCardNumber.value = validator.maskify(inputCardNumber.value);
   const valid = validator.isValid(numberTotal);
   console.log(valid);
   if (valid == true) {
-    alert("tarjeta valida");
+    pageBox.style.display ="flex";
+    containerShowTrue.style.display = "inherit";
   } else {
-    alert("tarjeta invalida");
+    pageBox.style.display ="flex";
+    containerShowFalse.style.display = "inherit";
   }
   
 }
