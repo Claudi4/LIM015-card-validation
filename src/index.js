@@ -12,9 +12,7 @@ const pageBox = document.getElementById("pageBox");
 pageBox.style.display ="none";
 
 
-document
-  .getElementById("buttonVali")
-  .addEventListener("click", validarCardIngreso);
+document.getElementById("buttonVali").addEventListener("click", validarCardIngreso);
 
 function validarCardIngreso() {
   containerShowTrue.style.display = "none";
@@ -33,17 +31,17 @@ function validarCardIngreso() {
   
 }
 
-/*let miFormulario = document.querySelector('#miFormulario');
+let miFormulario = document.querySelector('#miFormulario');
 miFormulario.codigo.addEventListener('keypress', function (e){
-	if (!soloNumeros(event)){
-  	e.preventDefault();
+	if (!soloNumeros(e)){
+    e.preventDefault();
   }
-})*/
+})
 
 //Solo permite introducir numeros.
-/*function soloNumeros(e){
+function soloNumeros(e){
     var key = e.charCode;
     console.log(key);
     return key >= 48 && key <= 57;
-}*/
+}
 
